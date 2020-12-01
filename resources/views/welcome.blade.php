@@ -6,34 +6,25 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h5 {font-family: "Raleway", sans-serif}
+body,h5,h1,p {font-family: "Raleway", sans-serif, color:"white"}
 body, html {height: 100%}
 .bgimg {
-  background-image: url('/img/Arrabella3-img.png');
+  background-image: url('img/bg/img (3).png');
   min-height: 100%;
   background-position: center;
   background-size: cover;
 }
 </style>
-<body>
-
-  <a href="{{ route('welcome') }}">Home</a>
-  <a href="{{ route('about') }}">About</a>
-  <a href="{{ route('contact') }}">Contact</a>
-  <a href="{{ route('login') }}">Login</a>
-  <a href="{{ route('register') }}">Register</a>
-  <h5>Welcome to Arrabelle Luxury Apartments</h5>
+<body style="background-color: black;">
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
+
+  <div class="w3-display-topleft w3-padding-large w3-large">
+    Logo <x-header />
   </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div>
+
   <div class="w3-display-bottomleft w3-padding-large">
+    Footer
     Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
   </div>
 </div>
