@@ -97,6 +97,6 @@ input[type=submit]:hover {
     </div>
   </div>
 </div>
-
+<x-footer/>
 </body>
 </html>
