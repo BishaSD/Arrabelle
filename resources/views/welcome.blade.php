@@ -13,6 +13,7 @@ body, html {height: 100%}
   min-height: 100%;
   background-position: center;
   background-size: cover;
+  margin: 10px 10px;
 }
 </style>
 <body style="background-color: black;">
