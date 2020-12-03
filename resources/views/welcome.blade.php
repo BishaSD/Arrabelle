@@ -36,8 +36,9 @@ body, html {height: 100%}
   margin: 5px 10px 5px 0;
   padding: 10px;
   border-color: rgb(215, 181, 109,0.2);
+  border: 1px;
   border-radius: 4px;
-  background-color:rgb(215, 181, 109, 0.2);
+  background-color:rgb(215, 181, 109, 0.1);
 }
 
 .form-inline button {
@@ -50,7 +51,7 @@ body, html {height: 100%}
 }
 
 .form-inline button:hover {
-  color:#ddd;
+  color:black;
   background-color:#d7b56d ;
   border: 1px solid #d7b56d;
 }
@@ -69,9 +70,10 @@ body, html {height: 100%}
 <body style="background-color: black;">
 
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-
   <!-- Header Component -->
-  <x-header/>
+    <x-header/>
+
+
 
   <div class="w3-display-topleft w3-padding-large w3-large">
     <!-- Responsive Middle Text on Welcome Page -->
@@ -88,25 +90,21 @@ body, html {height: 100%}
     Footer
     Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
   </div> -->
-
-  <!-- Responsive Inline Form -->
-  <div class="w3-display-bottomleft">
-  <div class="form-container">
-  <form class="form-inline" action="/action_page.php">
-    <label for="email">Email:</label>
-    <input type="email" id="email" placeholder="Enter email" name="email">
-    <label for="pwd">Password:</label>
-    <input type="password" id="pwd" placeholder="Enter password" name="pswd">
-    <label>
-      <input type="checkbox" name="remember"> Remember me
-    </label>
-    <button type="submit">Submit</button>
-  </form>
-  </div>
-  </div>
-
 </div>
 
+<!-- Responsive Inline Form -->
+<div class="form-container">
+<form class="form-inline" action="/action_page.php">
+  <label for="email">Email:</label>
+  <input type="email" id="email" placeholder="Enter email" name="email">
+  <label for="pwd">Password:</label>
+  <input type="password" id="pwd" placeholder="Enter password" name="pswd">
+  <label>
+    <input type="checkbox" name="remember"> Remember me
+  </label>
+  <button type="submit">Submit</button>
+</form>
+</div>
 
 
 <div id="about">
