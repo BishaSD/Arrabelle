@@ -40,7 +40,8 @@ body, html {height: 100%}
   </div>
 
 </div>
-
-</body>
+<!-- Footer Component -->
 <x-footer/>
+</body>
+
 </html>
