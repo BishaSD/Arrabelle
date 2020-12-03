@@ -20,11 +20,12 @@
       }
 
     .topnav a {
-      float: right;
+      float: left;
+      width:16%;
       display: block;
       color: #d7b56d;
       text-align: center;
-      padding: 14px 16px;
+      padding: 10px 16px;
       text-decoration: none;
       font-size: 17px;
       background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
@@ -52,6 +53,36 @@
       padding: 14px;
       color: inherit;
     }
+    .topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 4px;
+  font-size: 17px;
+  border-color: rgb(215, 181, 109,0.2);
+  border-radius: 4px;
+  background-color:rgb(215, 181, 109, 0.2);
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 4px;
+  margin-right: 14px;
+  background: transparent;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  color: #d7b56d;
+}
+
+.topnav .search-container button:hover {
+  /*background: #d7b56d;*/
+  color: #ddd ;
+}
+
 
     @media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {display: none;}
@@ -73,21 +104,25 @@
         display: block;
         text-align: left;
       }
+      .topnav input[type=text] {
+        border: 1px solid rgb(215, 181, 109,0.2);
+      }
     }
 
     </style>
     </head>
     <body>
-      <!-- Brand/logo -->
-      <a class="navbar-brand" href="{{ route('welcome') }}">
-        <img src="img/logo/logo (brand).png" alt="logo" style="height:50px; float:right; padding: 2px 2px;">
-      </a>
-      <div class="topnav" id="myTopnav">
 
-        <!-- Navbar Links -->
-        <a href="{{ route('welcome') }}" class="active">Welcome</a>
-        <a href="{{ route('about') }}">About</a>
-        <a href="{{ route('contact') }}">Contact</a>
+      <div class="topnav" id="myTopnav">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="{{ route('welcome') }}" style="padding: 0px 0px;">
+          <img src="img/logo/logo (brand1).png" alt="logo" style="height:45px;">
+        </a>
+
+        <!-- Navbar Links
+        <a href="{{ route('welcome') }}" class="active">Welcome</a>-->
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
         @if (Route::has('login'))
                 @auth
                   <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">UserHome</a>
@@ -99,6 +134,12 @@
                     @endif
                 @endauth
         @endif
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search" style="width:214px">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
         </a>

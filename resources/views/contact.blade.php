@@ -65,7 +65,7 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
-<x-header />
+
 <h2>Responsive Contact Section</h2>
 <p>Resize the browser window to see the effect.</p>
 
@@ -97,6 +97,6 @@ input[type=submit]:hover {
     </div>
   </div>
 </div>
-<x-footer/>
+
 </body>
 </html>

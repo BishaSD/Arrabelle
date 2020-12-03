@@ -74,21 +74,22 @@ html {
 </style>
 </head>
 <body>
-<x-header />
+
 <div class="about-section">
   <h1>About Us Page</h1>
   <p>Some text about who we are and what we do.</p>
   <p>Resize the browser window to see that this page is responsive by the way.</p>
+  <p>Our Luxury Apartment Homes offer Chef Inspired Kitchens, State-of-the-Art Custom Lighting, Energy Efficient Stainless Steel Appliances, Deep Jetted Tubs, Spacious Walk-In Closets, In Unit High Efficiency Washer/Dryer, Gorgeous Counter Tops, and Much More!</p>
 </div>
 
-<h2 style="text-align:center">Our Team</h2>
+<h2 style="text-align:center">Our Agents</h2>
 <div class="row">
   <div class="column">
     <div class="card">
-      <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+      <img src="img/avatar/f-orange.png" alt="Jane" style="width:100%">
       <div class="container">
         <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
+        <p class="title">Real Estate Agent</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>jane@example.com</p>
         <p><button class="button">Contact</button></p>
@@ -98,10 +99,10 @@ html {
 
   <div class="column">
     <div class="card">
-      <img src="/w3images/team2.jpg" alt="Mike" style="width:100%">
+      <img src="img/avatar/m-green.png" alt="Mike" style="width:100%">
       <div class="container">
         <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
+        <p class="title">Apartment Locator</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
         <p><button class="button">Contact</button></p>
@@ -111,10 +112,10 @@ html {
 
   <div class="column">
     <div class="card">
-      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <img src="img/avatar/f-red.png" alt="John" style="width:100%">
       <div class="container">
         <h2>John Doe</h2>
-        <p class="title">Designer</p>
+        <p class="title">Real Estate Agent</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>john@example.com</p>
         <p><button class="button">Contact</button></p>
@@ -122,6 +123,6 @@ html {
     </div>
   </div>
 </div>
-<x-footer/>
+
 </body>
 </html>

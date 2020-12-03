@@ -40,6 +40,13 @@ body, html {height: 100%}
   </div>
 
 </div>
+<div id="about">
+@include('about')
+</div>
+<div id="contact">
+@include('contact')
+</div>
+
 <!-- Footer Component -->
 <x-footer/>
 </body>
