@@ -31,6 +31,7 @@ Route::get('/', function () {
 Route::get('/welcome', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 //Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 //Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
+//Route::get('/apartment', [App\Http\Controllers\ApartmentController::class, 'index'])->name('apartment');
 Route::get('/users', [App\Http\Controllers\UsersController::class, 'index'])->name('users');
 
 Auth::routes();

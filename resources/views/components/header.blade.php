@@ -7,6 +7,7 @@
     <!-- Font Awesome stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
       body{
@@ -21,7 +22,7 @@
 
     .topnav a {
       float: left;
-      width:16%;
+      width:13.3%;
       display: block;
       color: #d7b56d;
       text-align: center;
@@ -82,7 +83,12 @@
   /*background: #d7b56d;*/
   color: #ddd ;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 0px;
+}
 
     @media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {display: none;}
@@ -121,6 +127,7 @@
 
         <!-- Navbar Links
         <a href="{{ route('welcome') }}" class="active">Welcome</a>-->
+        <a href="#apartment">Apartments</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
         @if (Route::has('login'))
@@ -152,6 +159,19 @@
         x.className += " responsive";
       } else {
         x.className = "topnav";
+      }
+    }
+
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
       }
     }
     </script>
