@@ -3,178 +3,169 @@
     <!DOCTYPE html>
     <html>
     <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Font Awesome stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Arrabelle Luxury Apartment</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-      body{
-        font-family: "Raleway", sans-serif;
-        color:"white";
-        background-color: "black";
-      }
-    .topnav {
-      overflow: hidden;
-      background-color:transparent;
-      }
+      <!-- Font Awesome stylesheets -->
+      <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/fontawesome.min.css') }}" />
+      <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css') }}" />
+      <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') }}"/>
 
-    .topnav a {
-      float: left;
-      width:13.3%;
-      display: block;
-      color: #d7b56d;
-      text-align: center;
-      padding: 10px 16px;
-      text-decoration: none;
-      font-size: 17px;
-      background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    }
 
-    .topnav a:hover {
-      /*background-color: #ffcc95;*/
-      border-bottom-style:solid;
-      border-width: thin;
-      border-color: #d7b56d;
-      color: #d7b56d;
-    }
+      <link href="images/apple-touch-icon.png" type="images/x-icon" rel="shortcut icon">
+      <!-- Place favicon.ico in the root directory -->
 
-    .topnav a.active {
-      /*background-color: #ffcc95;*/
-      border-bottom-style: solid;
-      border-width: thin;
-      border-color: #d7b56d;
-      color: #d7b56d;
-    }
+      <!-- All css files are included here. -->
+      <!-- Bootstrap fremwork main css -->
+      <link rel="stylesheet" href="{{url('css/bootstrap.min.css') }} ">
+      <!-- This core.css file contents all plugings css file. -->
+      <link rel="stylesheet" href="{{ url('css/core.css') }} ">
+      <!-- Theme shortcodes/elements style -->
+      <link rel="stylesheet" href="{{ url('css/shortcode/shortcodes.css') }} ">
+      <!-- Theme main style -->
+      <link rel="stylesheet" href="{{ url('css/style.css') }} ">
+      <!-- Responsive css -->
+      <link rel="stylesheet" href="{{ url('css/responsive.css') }} ">
+      <!-- customizer style css -->
+      <link rel="stylesheet" href="{{ url('css/style-customizer.css') }} ">
+      <link href="#" data-style="styles" rel="stylesheet">
 
-    .topnav .icon {
-      display: none;
-      font-size: 14px !important;
-      padding: 14px;
-      color: inherit;
-    }
-    .topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 4px;
-  font-size: 17px;
-  border-color: rgb(215, 181, 109,0.2);
-  border-radius: 4px;
-  background-color:rgb(215, 181, 109, 0.2);
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 4px;
-  margin-right: 14px;
-  background: transparent;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  color: #d7b56d;
-}
-
-.topnav .search-container button:hover {
-  /*background: #d7b56d;*/
-  color: #ddd ;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding-top: 0px;
-}
-
-    @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child) {display: none;}
-      .topnav a.icon {
-        float: right;
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      .topnav.responsive {position: relative;}
-      .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-      .topnav input[type=text] {
-        border: 1px solid rgb(215, 181, 109,0.2);
-      }
-    }
-
-    </style>
+      <!-- Modernizr JS -->
+      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
 
-      <div class="topnav" id="myTopnav">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="{{ route('welcome') }}" style="padding: 0px 0px;">
-          <img src="img/logo/logo (brand1).png" alt="logo" style="height:45px;">
-        </a>
+      <!--Header section start-->
+                <a href="{{ route('welcome') }}"><img src="images/logo/logo-a.png" alt="logo"></a>
+            </div>
+          </div>
+          <div class="col-md-10 col-sm-10 hidden-xs">
+              <div class="menu mt-25">
+                <div class="menu-list hidden-sm hidden-xs">
+                    <nav>
+                        <ul>
+                            <li><a href="{{ route('welcome') }}">home</a></li>
+                            <li><a href="{{ route('about') }}">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="#">pages<i class="fa fa-angle-down"></i></a>
+                                <ul class="dropdown_menu">
+                                    <li><a href="404.html">404</a></li>
+          <li><a href="booking-information.html">Booking Information</a></li>
+          <li><a href="personal-information.html">Personal Information</a></li>
+          <li><a href="payment-information.html">Parment Information</a></li>
+          <li><a href="booking-done.html">Booking Done</a></li>
+          <li><a href="room-booking.html">Room booking</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="our-room.html">Room</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                            <!-- Laravel auto-generated auth links -->
+                            @if (Route::has('login'))
+                                    @auth
+                                      <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">UserHome</a></li>
+                                    @else
+                                      <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a></li>
 
-        <!-- Navbar Links
-        <a href="{{ route('welcome') }}" class="active">Welcome</a>-->
-        <a href="#apartment">Apartments</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        @if (Route::has('login'))
+                                        @if (Route::has('register'))
+                                          <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a></li>
+                                        @endif
+                                    @endauth
+                            @endif
+                            <!-- End of Laravel auto-generated auth links -->
+                        </ul>
+                    </nav>
+                </div>
+                <div class="search-bar-icon">
+                   <a class="search-open" href="#"><i class="fa fa-search"></i></a>
+                </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          <!-- Mobile menu start -->
+          <div class="mobile-menu-area hidden-lg hidden-md">
+          <div class="container">
+          <div class="col-md-12">
+          <nav id="dropdown">
+          <ul>
+          <li><a href="{{ route('welcome') }}">home</a></li>
+          <li><a href="{{ route('about') }}">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">pages</a>
+            <ul>
+                <li><a href="404.html">404</a></li>
+                <li><a href="booking-information.html">Booking Information</a></li>
+                <li><a href="personal-information.html">Personal Information</a></li>
+                <li><a href="payment-information.html">Parment Information</a></li>
+                <li><a href="booking-done.html">Booking Done</a></li>
+                <li><a href="room-booking.html">Room booking</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="staff.html">Staff</a></li>
+                <li><a href="our-room.html">Room</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html">contact</a></li>
+          <!-- Laravel auto-generated auth links -->
+          @if (Route::has('login'))
                 @auth
-                  <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">UserHome</a>
+                  <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">UserHome</a></li>
                 @else
-                  <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+                  <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a></li>
 
                     @if (Route::has('register'))
-                      <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
+                      <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a></li>
                     @endif
                 @endauth
-        @endif
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search" style="width:214px">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-      </div>
-
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-
-    window.onscroll = function() {myFunction()};
-
-    var navbar = document.getElementById("myTopnav");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-    </script>
+          @endif
+          <!-- End of Laravel auto-generated auth links -->
+          </ul>
+          </nav>
+                      </div>
+                  </div>
+              </div>
+              <!-- Mobile menu end -->
+              <!-- jquery latest version -->
+              <script src="js/vendor/jquery-1.12.0.min.js"></script>
+              <!-- Bootstrap framework js -->
+              <script src="js/bootstrap.min.js"></script>
+              <!--counter up js-->
+              <script src="js/waypoints.min.js"></script>
+              <script src="js/jquery.counterup.min.js"></script>
+              <!-- Video player js -->
+              <script src="js/video-player.js"></script>
+              <!-- headlines js -->
+              <script src="js/animated-headlines.js"></script>
+              <!-- Ajax mail js -->
+              <script src="js/mailchimp.js"></script>
+              <!-- Ajax mail js -->
+              <script src="js/ajax-mail.js"></script>
+              <!-- parallax js -->
+              <script src="js/parallax.js"></script>
+              <!-- textilate js -->
+              <script src="js/textilate.js"></script>
+              <script src="js/lettering.js"></script>
+              <!--isotope js-->
+              <script src="js/isotope.pkgd.min.js"></script>
+              <script src="js/packery-mode.pkgd.min.js"></script>
+              <!-- Style Customizer Js  -->
+              <script src="js/style-customizer.js"></script>
+              <!-- Owl carousel Js -->
+              <script src="js/owl.carousel.min.js"></script>
+              <!--Magnificant js-->
+              <script src="js/jquery.magnific-popup.js"></script>
+              <!-- All js plugins included in this file. -->
+              <script src="js/plugins.js"></script>
+              <!-- Main js file that contents all jQuery plugins activation. -->
+              <script src="js/main.js"></script>
 
     </body>
     </html>

@@ -32,7 +32,7 @@ html {
     <!-- Display all apartments from database -->
     <!-- Include if statement to display searched results -->
     <!-- or another if statement to display results of checked availability if form submitted -->
-    <!-- Else insert query to select all apartments from database -->
+    <!-- Else select all apartments from database -->
     <p>Resize the browser window to see that this page is responsive by the way.</p>
   </div>
 </body>
