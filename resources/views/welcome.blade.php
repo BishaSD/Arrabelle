@@ -194,11 +194,11 @@
                                     <form action="#">
                                         <div class="b-date arrive mb-15">
                                             <input class="date-picker" type="text" placeholder="Arrive Date">
-                                            <i class="mdi mdi-calendar-text"></i>
+                                            <i class='far fa-calendar-alt'></i>
                                         </div>
                                         <div class="b-date departure mb-15">
                                             <input class="date-picker" type="text" placeholder="Departure Date">
-                                            <i class="mdi mdi-calendar-text"></i>
+                                            <i class='far fa-calendar-alt'></i>
                                         </div>
                                         <div class="select-book mb-15">
                                             <select name="book" class="select-booking">
