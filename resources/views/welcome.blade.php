@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Arrabelle Luxury Apartment</title>
+    <title>Arrabelle Luxury Apartments</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css') }}"/>
 
 
-    <link href="images/apple-touch-icon.png" type="images/x-icon" rel="shortcut icon">
+    <link href="images/logo/logo (brand5).png" type="images/x-icon" rel="shortcut icon">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- All css files are included here. -->
@@ -73,7 +73,7 @@
                                   <div class="header-top ptb-10">
                                       <div class="adresses">
                                           <div class="phone">
-                                              <p>call <span>+012 345 678 102 </span></p>
+                                              <p>Call on: <span>+012 345 678 102 </span></p>
                                           </div>
                                           <div class="email">
                                               <p>Email: <span>info@arrabelle.com</span></p>
@@ -114,7 +114,7 @@
                                                     <!-- Laravel auto-generated auth links -->
                                                     @if (Route::has('login'))
                                                             @auth
-                                                              <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">UserHome</a></li>
+                                                              <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">User Dashboard</a></li>
                                                             @else
                                                               <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a></li>
 
@@ -163,7 +163,7 @@
                                 <!-- Laravel auto-generated auth links -->
                                 @if (Route::has('login'))
                                         @auth
-                                          <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">UserHome</a></li>
+                                          <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">User Dashboard</a></li>
                                         @else
                                           <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a></li>
 
@@ -187,36 +187,41 @@
                         <div class="col-md-4 col-sm-5">
                             <div class="booking-box">
                                 <div class="booking-title">
-                                    <h3>Book A Room</h3>
-                                    <p>There are many vars of passageson't look even slightly believable.</p>
+                                    <h3>Book Uniques places To Stay</h3>
+                                    <p style="margin-bottom:9px;">Search for an apartment.</p>
                                 </div>
                                 <div class="booking-form">
-                                    <form action="#">
-                                        <div class="b-date arrive mb-15">
-                                            <input class="date-picker" type="text" placeholder="Arrive Date">
-                                            <i class='far fa-calendar-alt'></i>
-                                        </div>
-                                        <div class="b-date departure mb-15">
-                                            <input class="date-picker" type="text" placeholder="Departure Date">
-                                            <i class='far fa-calendar-alt'></i>
-                                        </div>
-                                        <div class="select-book mb-15">
-                                            <select name="book" class="select-booking">
-                                                <option value="" selected>Adult</option>
-                                                <option value="1">Teen</option>
-                                                <option value="1">old</option>
-                                            </select>
-                                        </div>
-                                        <div class="select-book  mb-30">
-                                            <select name="book" class="select-booking">
-                                                <option value="" selected>Room</option>
-                                                <option value="1">Roome 101</option>
-                                                <option value="1">Roome 102</option>
-                                            </select>
-                                        </div>
-                                        <div class="submit-form">
-                                            <button type="submit">Check Availability</button>
-                                        </div>
+                                  <!-- Form Start -->
+                                    <form action="{{ route('apartment') }}" method="POST">
+                                      <!-- Security Token -->
+                                      @csrf
+                                      <!-- Error Message -->
+                                      <span style="color:red">@error('region'){{$message}}@enderror</span><br>
+                                      <!-- Form Field -->
+                                      <label for="region" style="color:black"><strong>Region</strong></label>
+                                      <input type="text" name="region" placeholder="Enter a Region" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
+
+                                      <label for="check-in" style="color:black"><strong>Check In</strong></label>
+                                      <input type="date" name="check-in" placeholder="Check In" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
+
+                                      <label for="check-out" style="color:black"><strong>Check Out</strong></label>
+                                      <input type="date" name="check-out" placeholder="Check Out" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
+
+                                      <!-- Error Message -->
+                                      <span style="color:red">@error('guest'){{$message}}@enderror</span><br>
+                                      <!-- Form Field -->
+                                      <label for="guest" style="color:black"><strong>Guests</strong></label>
+                                      <input type="text" name="guest" placeholder="Enter 1 or More Guests" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
+
+                                      <!-- Error Message -->
+                                      <span style="color:red">@error('room'){{$message}}@enderror</span><br>
+                                      <!-- Form Field -->
+                                      <label for="rooms" style="color:black"><strong>Rooms</strong></label>
+                                      <input type="text" name="room" placeholder="Enter 1 or More Rooms" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
+
+                                      <div class="submit-form">
+                                        <button type="submit">Check Availability</button>
+                                      </div>
                                     </form>
                                 </div>
                             </div>
@@ -236,7 +241,7 @@
                                 </h1>
                                 <p class="welcome-desc">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
                                 <div class="explore">
-                                    <a href="#">EXPLORE IT</a>
+                                    <a href="#our-gallery">EXPLORE IT</a>
                                 </div>
                             </div>
                         </div>
@@ -253,7 +258,7 @@
                             <div class="row">
                                 <div class="col-sm-8 col-sm-offset-2">
                                     <div class="search-form-wrap">
-                                        <button class="close-search"><i class="mdi mdi-close"></i></button>
+                                        <button class="close-search"><i class="fa fa-close" style="font-size:24px"></i></button>
                                         <form action="#">
                                             <input type="text" placeholder="Search here..." value="Search here..."/>
                                             <button class="search-button" type="submit">
@@ -297,7 +302,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title mb-75">
-                            <h2>our <span>Room</span></h2>
+                            <h2>Our <span>Room</span></h2>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered by injected humour.</p>
                         </div>
                     </div>
@@ -820,17 +825,17 @@
                             <div class="single-testimonial">
                                 <h2>Louis Smith</h2>
                                <p>There are many variations of passages of Lorem I available, but the majority have suffered alteration in som, d humour, or randomised words which
-    </p>
+                               </p>
                             </div>
                             <div class="single-testimonial">
                                 <h2>Louis Smith</h2>
                                <p>There are many variations of passages of Lorem I available, but the majority have suffered alteration in som, d humour, or randomised words which
-    </p>
+                               </p>
                             </div>
                             <div class="single-testimonial">
                                 <h2>Louis Smith</h2>
                                <p>There are many variations of passages of Lorem I available, but the majority have suffered alteration in som, d humour, or randomised words which
-    </p>
+                               </p>
                             </div>
                         </div>
                     </div>
@@ -898,7 +903,7 @@
                                 </div>
                                 <div class="news-desc">
                                     <h3 class="news-title"><a href="#">Best Things to Do In London Enjoy Your life
-    the Night life.</a> </h3>
+                                      the Night life.</a> </h3>
                                     <p class="news_desc">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of tystem, and expound the actual teachings of the great explorer of the truth, the master-builder uman happiness. No one rejects, dislikes, or avoids pleasure itself, because it</p>
                                     <div class="news-action">
                                         <div class="read-more">
@@ -930,7 +935,7 @@
                                 </div>
                                 <div class="news-desc">
                                     <h3 class="news-title"><a href="#">Best Things to Do In London Enjoy Your life
-    the Night life. </a></h3>
+                                      the Night life. </a></h3>
                                     <p class="news_desc">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of tystem, and expound the actual teachings of the great explorer of the truth, the master-builder uman happiness. No one rejects, dislikes, or avoids pleasure itself, because it</p>
                                     <div class="news-action">
                                         <div class="read-more">
@@ -961,19 +966,19 @@
                     <div class="communities-list">
                         <div class="single-commmunites">
                             <h1 class="counter">500</h1>
-                            <h2>Customer</h2>
+                            <h2>Customers</h2>
                         </div>
                         <div class="single-commmunites">
                             <h1 class="counter">200</h1>
-                            <h2>clecbrities</h2>
+                            <h2>Celebrities</h2>
                         </div>
                         <div class="single-commmunites">
                             <h1 class="counter">850</h1>
-                            <h2>return</h2>
+                            <h2>Returns</h2>
                         </div>
                         <div class="single-commmunites hidden-xs">
                             <h1 class="counter">1250</h1>
-                            <h2>Happy people</h2>
+                            <h2>Positive Reviews</h2>
                         </div>
                     </div>
                 </div>

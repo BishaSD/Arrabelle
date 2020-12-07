@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Chondo hotel 
+    Template Name: Chondo hotel
     Template URI: http://hastech.company/
     Description: This is html5 template
     Author: Hastech
@@ -8,21 +8,21 @@
     Version: 1.0
 
 -----------------------------------------------------------------------------------
-    
+
     CSS INDEX
     ===================
-	
+
     1. Theme Default CSS
     2. Preloader CSS
 	3.  Header Css
-	4. Searchbar Css 
+	4. Searchbar Css
 	5. Navigation Css
     6. Home about section css
     7. our Room css
 	8. Our serivces Css
-	9. Staff css 
+	9. Staff css
 	10. Testimonail Css
-	11. Our gallery Css 
+	11. Our gallery Css
 	12. Our news Css
 	13. Fun Factor Css
     14. Team Brand And Newsletter Css
@@ -31,7 +31,7 @@
 		16.1 Home two Header Css
 	17. Home 2 services Css
 	18. Clinet say Testimonial
-	19. Home 2 gallery Css 
+	19. Home 2 gallery Css
 	20.  Getting Offer today
 	21. Footer 2 Css
 	22.1 Home3 Css here
@@ -80,11 +80,11 @@
 }
 
 
-   
+
    img{max-width: 100%}
-  
+
 /*************************************
-         Custom-content all   
+         Custom-content all
  **************************************/
 .boxed-layout .wrapper {
     box-shadow: -3px 0 50px -2px rgba(0, 0, 0, 0.14);
@@ -136,14 +136,14 @@
   margin-top: 65px;
   border-radius: 50% 50% 50% 50%;
 }
-.object_one {	
+.object_one {
   -webkit-animation: object_one 1.5s infinite;
   animation: object_one 1.5s infinite;
 }
 .object_two {
   -webkit-animation: object_two 1.5s infinite;
   animation: object_two 1.5s infinite;
-  -webkit-animation-delay: 0.25s; 
+  -webkit-animation-delay: 0.25s;
   animation-delay: 0.25s;
 }
 .object_three {
@@ -156,7 +156,7 @@
 75% { -webkit-transform: scale(0); }
 }
 @keyframes object_one {
-  75% { 
+  75% {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
@@ -165,7 +165,7 @@
   75% { -webkit-transform: scale(0); }
 }
 @keyframes object_two {
-  75% { 
+  75% {
     transform: scale(0);
     -webkit-transform:  scale(0);
   }
@@ -174,7 +174,7 @@
   75% { -webkit-transform: scale(0); }
 }
 @keyframes object_three {
-  75% { 
+  75% {
     transform: scale(0);
     -webkit-transform: scale(0);
   }
@@ -213,7 +213,7 @@
 }
 .adresses .phone > p, .adresses .email > p,.search-bar input,.search-bar button,.booking-title h3,.booking-title > p,.b-date i,.b-date input,.select-book select,.select-book::before,.select-book select option,.submit-form button:hover,.social-links > a,.explore > a,p.welcome-desc,.welcome-text h1,.welcome-text h2 {
     color: #fff;
-} 
+}
 .adresses .email > p {
     margin-left: 34px;
 }
@@ -272,7 +272,7 @@
 .booking-title > p {
   font-weight: 300;
   line-height: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .b-date i {
   font-size: 18px;
@@ -395,7 +395,7 @@ p.welcome-desc {
 }
 
 /*--------------
-  4. Searchbar Css 
+  4. Searchbar Css
 -------------*/
 .search-bar {
   display: none;
@@ -829,7 +829,7 @@ p.welcome-desc {
     width: 0;
     height: 0;
     top: -90px;
-    
+
 }
 .staff-title::after {
     border-bottom: 90px solid rgba(58, 196, 250, 0.9);
@@ -1322,11 +1322,11 @@ h3.news-title {
     width: 100%;
 }
 
-/* -------------------------- 
+/* --------------------------
   16. Home Two Css here
 ----------------------------*/
 
-/* -------------------------- 
+/* --------------------------
    16.1 Home two Header Css here
 ----------------------------*/
 .header-section.static2{
@@ -1345,7 +1345,7 @@ h3.news-title {
 }
 .static2 .welcome-section {
   padding-top: 0;
-}    
+}
 .static2 .menu-list {
   float: none;
 }
@@ -1396,7 +1396,7 @@ h3.news-title {
 .layout-header .social-links > a {
   margin-left: 15px;
 }
-/* -------------------------- 
+/* --------------------------
    17. Home 2 services Css here
 ----------------------------*/
 .services-tab-menu ul li {
@@ -1553,7 +1553,7 @@ h3.news-title {
 .client-say-title > h3 {
   font-size: 22px;
   margin-bottom: 2px;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   font-weight: 600;
 }
 .client-say-title > h2 {
@@ -1773,7 +1773,7 @@ h3.news-title {
     22.1 Home3 Css here
 ---------------------*/
 .header-section.static-3 {
-  background: url(images/bg/h2-bg.jpg)no-repeat scroll center center;  
+  background: url(images/bg/h2-bg.jpg)no-repeat scroll center center;
 }
 .static-3 .welcome-section,.static4 .welcome-section {
   padding: 150px 0;
@@ -1782,7 +1782,7 @@ h3.news-title {
    22.2 Home4 Css here
 ---------------------*/
 .header-section.static4 {
- background: url(images/bg/h2-bg.jpg)no-repeat fixed center center; 
+ background: url(images/bg/h2-bg.jpg)no-repeat fixed center center;
 }
 
 /*-----------------------
