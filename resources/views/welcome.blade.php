@@ -66,7 +66,7 @@
                             <div class="row">
                                 <div class="col-md-2 col-sm-2 col-xs-12">
                                     <div class="logo mt-15">
-                                        <a href="{{ route('welcome') }}"><img src="images/logo/logo-a.png" alt="logo"></a>
+                                        <a href="{{ route('welcome') }}"><img src="images/logo/logo-a.png" alt="logo" style="height:65px"></a>
                                     </div>
                                 </div>
                                 <div class="col-md-10 col-sm-10 hidden-xs">
@@ -274,7 +274,7 @@
             </div>
         <!-- search bar End -->
         <!--About Section Title start-->
-        <div class="about-section text-center ptb-80 black_bg">
+        <div class="about-section text-center ptb-80" style="background-image:url('images/customizer/pattern/moroccan-flower.png')">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -286,7 +286,7 @@
                     <div class="col-md-12">
                         <div class="about-chondo">
                             <div class="about-member">
-                                <img src="images/bg/dark-waves.jpg" alt="about-section">
+                                <img src="images/bg/img (1).png" alt="about-section">
                                 <h3>Mohin patwary</h3>
                                 <h5 class="mb-0">hrd head</h5>
                             </div>
@@ -1058,7 +1058,7 @@
                     <div class="col-md-3 col-sm-4 col-xs-6">
                         <div class="single-footer mt-0">
                             <div class="logo">
-                                <img src="images/logo/logo-a.png" alt="footer-logo">
+                                <img src="images/logo/logo-a.png" alt="footer-logo" style="height:65px">
                             </div>
                             <div class="f-adress">
                                 <p><span>Address:</span> ur address goes here, street Crossroad123.</p>

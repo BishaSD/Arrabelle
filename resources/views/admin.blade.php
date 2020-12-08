@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<body style="background-image:url('images/customizer/pattern/9.jpg')">
 
 @section('content')
 <div class="container">
@@ -15,7 +16,7 @@
                           </div>
                       @endif
 
-                      {{ __('You are logged in!') }}
+                      {{ __('You are logged in as Admin!') }}
                   </div>
                     <form method="POST" action="{{ route('admin') }}">
                         @csrf
@@ -82,3 +83,4 @@
     </div>
 </div>
 @endsection
+</body>

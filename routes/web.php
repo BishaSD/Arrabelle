@@ -21,7 +21,7 @@ Route::get('/', function () {
 Route::get('/welcome', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
 Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
-Route::get('/users', [App\Http\Controllers\UsersController::class, 'index'])->name('users');
+Route::get('/user', [App\Http\Controllers\UserController::class, 'index'])->name('user');
 
 //Route for check room availability form.
 Route::POST("apartment",[RoomController::class,'getData']);

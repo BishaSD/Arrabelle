@@ -21,12 +21,20 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
+    protected function autenticated(Request $request, $user){
+      if ($user->id == 1){
+        return $redirectTo = RouteServiceProvider::ADMIN;
+      } else {
+        return $redirectTo = RouteServiceProvider::HOME;
+      }
+    }
+
     /**
      * Where to redirect users after login.
      *
      * @var string
-     */
-    protected $redirectTo = RouteServiceProvider::HOME;
+
+    protected $redirectTo = RouteServiceProvider::HOME;*/
 
     /**
      * Create a new controller instance.
