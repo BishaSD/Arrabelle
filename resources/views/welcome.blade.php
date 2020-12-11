@@ -45,142 +45,24 @@
 
     <!-- Pre Loader
 	============================================ -->
-	<div class="preloader">
-		<div class="loading-center">
-			<div class="loading-center-absolute">
-				<div class="object object_one"></div>
-				<div class="object object_two"></div>
-				<div class="object object_three"></div>
-			</div>
+<div class="preloader">
+  <div class="loading-center">
+		<div class="loading-center-absolute">
+			<div class="object object_one"></div>
+			<div class="object object_two"></div>
+			<div class="object object_three"></div>
 		</div>
 	</div>
+</div>
 
-    <div class="wrapper">
-        <!--Header section start-->
-        <div class="header-section" style="background-image:url('images/bg/wave-welc-sec.jpg')">
-            <div class="bg-opacity"></div>
-            <div class="top-header sticky-header">
-                <div class="top-header-inner">
-                    <div class="container">
-                        <div class="mgea-full-width">
-                            <div class="row">
-                                <div class="col-md-2 col-sm-2 col-xs-12">
-                                    <div class="logo mt-15">
-                                        <a href="{{ route('welcome') }}"><img src="images/logo/logo-a.png" alt="logo" style="height:65px"></a>
-                                    </div>
-                                </div>
-                                <div class="col-md-10 col-sm-10 hidden-xs">
-                                  <div class="header-top ptb-10">
-                                      <div class="adresses">
-                                          <div class="phone">
-                                              <p>Call on: <span>+012 345 678 102 </span></p>
-                                          </div>
-                                          <div class="email">
-                                              <p>Email: <span>info@arrabelle.com</span></p>
-                                          </div>
-                                      </div>
-                                      <div class="social-links">
-                                          <a href="https://github.com/BishaSD/Arrabelle.git"><i class="fa fa-github"style='font-size:20px'></i></a>
-                                          <a href="#"><i class='fab fa-youtube'style='font-size:20px'></i></a>
-                                          <a href="#"><i class='fab fa-redhat'style='font-size:20px'></i></a>
-                                          <a href="https://laravel.com/docs/8.x"><i class='fab fa-laravel' style='font-size:20px'></i></a>
-                                          <a href="#"><i class="fa fa-instagram" style="font-size:20px"></i></a>
-                                          <a href="#"><i class='fa fa-facebook-f'style='font-size:20px'></i></a>
-                                          <a href="#"><i class="fa fa-linkedin" style="font-size:20px"></i></a>
-                                      </div>
-                                  </div>
-                                      <div class="menu mt-25">
-                                        <div class="menu-list hidden-sm hidden-xs">
-                                            <nav>
-                                                <ul>
-                                                    <li><a href="{{ route('welcome') }}">home</a></li>
-                                                    <li><a href="{{ route('about') }}">About</a></li>
-                                                    <li><a href="gallery.html">Gallery</a></li>
-                                                    <li><a href="#">pages<i class="fa fa-angle-down"></i></a>
-                                                        <ul class="dropdown_menu">
-                                                            <li><a href="404.html">404</a></li>
-															<li><a href="booking-information.html">Booking Information</a></li>
-															<li><a href="personal-information.html">Personal Information</a></li>
-															<li><a href="payment-information.html">Parment Information</a></li>
-															<li><a href="booking-done.html">Booking Done</a></li>
-															<li><a href="room-booking.html">Room booking</a></li>
-															<li><a href="news.html">News</a></li>
-															<li><a href="gallery.html">Gallery</a></li>
-															 <li><a href="staff.html">Staff</a></li>
-															<li><a href="our-room.html">Room</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="contact-us.html">Contact</a></li>
-                                                    <!-- Laravel auto-generated auth links -->
-                                                    @if (Route::has('login'))
-                                                            @auth
-                                                              <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">User Dashboard</a></li>
-                                                            @else
-                                                              <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a></li>
-
-                                                                @if (Route::has('register'))
-                                                                  <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a></li>
-                                                                @endif
-                                                            @endauth
-                                                    @endif
-                                                    <!-- End of Laravel auto-generated auth links -->
-                                                </ul>
-                                            </nav>
-                                        </div>
-                                        <div class="search-bar-icon">
-                                           <a class="search-open" href="#"><i class="fa fa-search"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                 <!-- Mobile menu start -->
-                <div class="mobile-menu-area hidden-lg hidden-md">
-                    <div class="container">
-                        <div class="col-md-12">
-                            <nav id="dropdown">
-                            <ul>
-                                <li><a href="{{ route('welcome') }}">home</a></li>
-                                <li><a href="{{ route('about') }}">About</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="#">pages</a>
-                                    <ul>
-                                        <li><a href="404.html">404</a></li>
-                                        <li><a href="booking-information.html">Booking Information</a></li>
-                                        <li><a href="personal-information.html">Personal Information</a></li>
-                                        <li><a href="payment-information.html">Parment Information</a></li>
-                                        <li><a href="booking-done.html">Booking Done</a></li>
-                                        <li><a href="room-booking.html">Room booking</a></li>
-                                        <li><a href="news.html">News</a></li>
-                                        <li><a href="gallery.html">Gallery</a></li>
-                                        <li><a href="staff.html">Staff</a></li>
-                                        <li><a href="our-room.html">Room</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact-us.html">contact</a></li>
-                                <!-- Laravel auto-generated auth links -->
-                                @if (Route::has('login'))
-                                        @auth
-                                          <li><a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">User Dashboard</a></li>
-                                        @else
-                                          <li><a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a></li>
-
-                                            @if (Route::has('register'))
-                                              <li><a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a></li>
-                                            @endif
-                                        @endauth
-                                @endif
-                                <!-- End of Laravel auto-generated auth links -->
-                            </ul>
-                        </nav>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile menu end -->
-            </div>
-            <!--Welcome section-->
+<div class="wrapper">
+  <!--Header section start-->
+  <div class="header-section" style="background-image:url('images/bg/wave-welc-sec.jpg')">
+    <div class="bg-opacity"></div>
+    <!-- Start header component -->
+      <x-header/>
+    <!-- End of header component -->
+        <!--Welcome section-->
             <div class="welcome-section">
                 <div class="container">
                     <div class="row">
@@ -199,25 +81,19 @@
                                       <span style="color:red">@error('region'){{$message}}@enderror</span><br>
                                       <!-- Form Field -->
                                       <label for="region" style="color:black"><strong>Region</strong></label>
-                                      <input type="text" name="region" placeholder="Enter a Region" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
-
-                                      <label for="check-in" style="color:black"><strong>Check In</strong></label>
-                                      <input type="date" name="check-in" placeholder="Check In" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
-
-                                      <label for="check-out" style="color:black"><strong>Check Out</strong></label>
-                                      <input type="date" name="check-out" placeholder="Check Out" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
+                                      <input type="text" name="region" placeholder="Enter a Region" style="color:white; margin-bottom:12px; background: rgba(255, 255, 255, 0.5);border-color: transparent;">
 
                                       <!-- Error Message -->
                                       <span style="color:red">@error('guest'){{$message}}@enderror</span><br>
                                       <!-- Form Field -->
                                       <label for="guest" style="color:black"><strong>Guests</strong></label>
-                                      <input type="text" name="guest" placeholder="Enter 1 or More Guests" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
+                                      <input type="text" name="guest" placeholder="Enter 1 or More Guests" style="color:white; margin-bottom:12px; background:rgba(255, 255, 255, 0.5);border-color: transparent;">
 
                                       <!-- Error Message -->
                                       <span style="color:red">@error('room'){{$message}}@enderror</span><br>
                                       <!-- Form Field -->
                                       <label for="rooms" style="color:black"><strong>Rooms</strong></label>
-                                      <input type="text" name="room" placeholder="Enter 1 or More Rooms" style="color:white; margin-bottom:12px; background: rgba(83, 152, 178, 0.5);border-color: transparent;">
+                                      <input type="text" name="room" placeholder="Enter 1 or More Rooms" style="color:white; margin-bottom:12px; background:  rgba(255, 255, 255, 0.5);border-color: transparent;">
 
                                       <div class="submit-form">
                                         <button type="submit">Check Availability</button>
@@ -251,28 +127,8 @@
         </div>
         <!-- Header section end -->
         <!-- searchbar Start -->
-            <div class="search-bar animated slideOutUp">
-                <div class="table">
-                    <div class="table-cell">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-8 col-sm-offset-2">
-                                    <div class="search-form-wrap">
-                                        <button class="close-search"><i class="fa fa-close" style="font-size:24px"></i></button>
-                                        <form action="#">
-                                            <input type="text" placeholder="Search here..." value="Search here..."/>
-                                            <button class="search-button" type="submit">
-                                                <i class="fa fa-search"></i>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <!-- search bar End -->
+        <x-searchbar/>
+        <!-- searchbar End -->
         <!--About Section Title start-->
         <div class="about-section text-center ptb-80" style="background-image:url('images/customizer/pattern/moroccan-flower.png')">
             <div class="container">
@@ -287,8 +143,8 @@
                         <div class="about-chondo">
                             <div class="about-member">
                                 <img src="images/bg/img (1).png" alt="about-section">
-                                <h3>Mohin patwary</h3>
-                                <h5 class="mb-0">hrd head</h5>
+                                <h3>Shab Sk-D.</h3>
+                                <h5 class="mb-0">Project Owner</h5>
                             </div>
                         </div>
                     </div>
@@ -302,7 +158,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title mb-75">
-                            <h2>Our <span>Room</span></h2>
+                            <h2>Luxury <span>Appartments</span></h2>
                             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered by injected humour.</p>
                         </div>
                     </div>
@@ -317,7 +173,7 @@
                                     </div>
                                     <div class="room-desc">
                                         <div class="room-name">
-                                            <h3><a href="#">Delux room</a></h3>
+                                            <h3><a href="#">Deluxe room</a></h3>
                                         </div>
                                         <div class="room-rent">
                                             <h5>€ 200 / <span>Night</span></h5>
@@ -1037,10 +893,10 @@
                                 <div class="col-md-6">
                                     <div class="newsletter-form">
                                         <form id="mc-form" class="mc-form" >
-											<input id="mc-email" type="email" autocomplete="off" placeholder="Enter Address..." />
-											<button id="mc-submit" type="submit">Subscribe</button>
-										</form>
-									</div>
+											                    <input id="mc-email" type="email" autocomplete="off" placeholder="Enter Address..." />
+											                    <button id="mc-submit" type="submit">Subscribe</button>
+										                    </form>
+									                  </div>
                                 </div>
                             </div>
                         </div>
@@ -1050,101 +906,9 @@
 
         </div>
         <!--hotel team end-->
-        <!--Footer start -->
-        <div class="footer ptb-100">
-            <div class="footer-bg-opacity"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-4 col-xs-6">
-                        <div class="single-footer mt-0">
-                            <div class="logo">
-                                <img src="images/logo/logo-a.png" alt="footer-logo" style="height:65px">
-                            </div>
-                            <div class="f-adress">
-                                <p><span>Address:</span> ur address goes here, street Crossroad123.</p>
-                            </div>
-                            <div class="hotel-contact">
-                                <p><span>phone:</span> 99 55 88586 5478.</p>
-                                <p><span>Email:</span>info@example.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 hidden-sm col-xs-6">
-                        <div class="single-footer">
-                           <h3>Quick Links</h3>
-                           <div class="quick-item">
-                                <ul>
-                                   <li><a href="#">Rooms</a></li>
-                                   <li><a href="#">Food & Drinks</a></li>
-                                   <li><a href="#">Manifesto</a></li>
-                                   <li><a href="#">Beach Venues</a></li>
-                                   <li><a href="#">Wellness</a></li>
-                                   <li><a href="#">Contact</a></li>
-                                </ul>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-4 col-xs-6">
-                        <div class="single-footer">
-                            <h3>Get in touch</h3>
-                            <div class="get-touch">
-                                <p>There are many varins of passages of Lorem Ipsum available, but</p>
-                                <div class="get-conatct">
-                                    <form action="#">
-                                       <input type="text" value="Your name">
-                                       <input type="text" value="Your email">
-                                       <button type="submit">Send</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-md-3 col-sm-4 col-xs-6">
-                        <div class="single-footer">
-                            <h3>instagram</h3>
-                            <div class="instagram-post">
-                                <div class="single-post">
-                                    <a href="#"><img src="images/instagram/ins-1.jpg" alt=""></a>
-                                </div>
-                                <div class="single-post">
-                                    <a href="#"><img src="images/instagram/ins-2.jpg" alt=""></a>
-                                </div>
-                                <div class="single-post">
-                                    <a href="#"><img src="images/instagram/ins-3.jpg" alt=""></a>
-                                </div>
-                                <div class="single-post">
-                                    <a href="#"><img src="images/instagram/ins-4.jpg" alt=""></a>
-                                </div>
-                                <div class="single-post">
-                                    <a href="#"><img src="images/instagram/ins-5.jpg" alt=""></a>
-                                </div>
-                                <div class="single-post">
-                                    <a href="#"><img src="images/instagram/img-6.jpg" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright ptb-20 white_bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-8 col-xs-12">
-                        <p>Copyright© CHONDO 2018.All right reserved.Created by <a href="https://freethemescloud.com/"> Free themes Cloud</a></p>
-                    </div>
-                    <div class="col-md-6 col-sm-4 col-xs-12">
-                        <div class="footer-menu">
-                            <ul>
-                                <li><a href="#">Privacy policy</a></li>
-                                <li><a href="#">Term of use</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer end -->
+        <!-- Start footer component -->
+        <x-footer/>
+        <!-- End of header component -->
     </div>
 
 

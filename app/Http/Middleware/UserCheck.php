@@ -17,7 +17,7 @@ class UserCheck
     public function handle(Request $request, Closure $next)
     {
       /*echo "<h1>This text is from the UserCheck Middleware</h1>";*/
-      if ($request->Login && $request->Login=admin){
+      if ($request->email && $request->email='admin@admin.com'){
         return redirect('admin');
       }
         return $next($request);
